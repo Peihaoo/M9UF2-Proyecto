@@ -1,0 +1,145 @@
+/* Reset de algunos estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor principal */
+.profile-container {
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header con logo y nombre de usuario */
+.header {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y el nombre a la derecha */
+    align-items: center;
+    background-color: #000000; /* Color de fondo de la barra */
+    padding: 20px 40px; /* Más espacio alrededor para que el logo se destaque más */
+    color: black;
+    height: 65px; /* Altura mayor para que el logo se vea más grande */
+    margin-bottom: 100px;
+}
+
+#logo {
+    width: 80px; /* Aumenta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+.user-name p {
+    font-size: 24px; /* Aumenta el tamaño de la fuente del nombre */
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+}
+/* Información del perfil */
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+.location, .age {
+    font-size: 14px;
+    color: #555;
+}
+
+.bio {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.post-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.post-info {
+    margin-top: 10px;
+}
+
+.autor {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.fecha, .descripcio, .likes {
+    margin: 5px 0;
+}
+
+.likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.Interacciones {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Interacciones form {
+    margin: 0; /* Elimina márgenes extra si los hay */
+}

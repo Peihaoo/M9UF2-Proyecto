@@ -1,0 +1,169 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Header */
+/* Estilos para el Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y el nombre a la derecha */
+    align-items: center;
+    background-color: #000000; /* Color de fondo de la barra */
+    padding: 20px 40px; /* Más espacio alrededor para que el logo se destaque más */
+    color: black;
+    height: 65px; /* Altura mayor para que el logo se vea más grande */
+    margin-bottom: 100px;
+}
+
+#logo {
+    width: 80px; /* Aumenta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+.user-name p {
+    font-size: 24px; /* Aumenta el tamaño de la fuente del nombre */
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    
+}
+a {
+    text-decoration: none;
+    color:#000000;
+}
+
+/* Estilos del contenedor central */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    margin: 20px auto;
+}
+
+/* Estilos de los encabezados y textos */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Estilos de los botones */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.footer-fixed form {
+    margin: 0;
+}
+
+.footer-fixed button {
+    margin: 0;
+}
+.Interacciones {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.Interacciones button{
+    margin: 0;
+}
+.Interacciones form {
+    margin: 0; /* Elimina márgenes extra si los hay */
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Header */
+/* Estilos para el Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y el nombre a la derecha */
+    align-items: center;
+    background-color: #000000; /* Color de fondo de la barra */
+    padding: 20px 40px; /* Más espacio alrededor para que el logo se destaque más */
+    color: black;
+    height: 65px; /* Altura mayor para que el logo se vea más grande */
+    margin-bottom: 100px;
+}
+
+#logo {
+    width: 80px; /* Aumenta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+.user-name p {
+    font-size: 24px; /* Aumenta el tamaño de la fuente del nombre */
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    
+}
+a {
+    text-decoration: none;
+    color:#000000;
+}
+
+/* Estilos del contenedor central */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    margin: 20px auto;
+}
+
+/* Estilos de los encabezados y textos */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    margin: 5px 0;
+}

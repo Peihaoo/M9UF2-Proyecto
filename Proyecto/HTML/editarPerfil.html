@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Edit Profile</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="/CSS/editarPerfil.css">
+</head>
+<body>
+    <img id="logo" src="../img/logo.png" alt="Logo">
+    <form method="POST" action="../PHP/editarPerfil.php" id="info" enctype="multipart/form-data">
+        <label for="pfp">Foto de perfil</label>
+        <input id="pfp" name="pfp" type="file"/>
+
+        <label for="edat">Edat: </label>
+        <input type="number" name="edat">
+        
+        <label for="ubicacio">Ubicació: </label>
+        <textarea name="ubicacio" rows="1" cols="55"></textarea>
+        
+        <label for="biografia">Biografia: </label>
+        <textarea name="biografia" rows="4" cols="55"></textarea>
+
+        <button type="submit">Confirmar</button>
+    </form>
+    <form action="../PHP/perfil.php">
+        <button type="submit" id="perfil">Cancelar</button>
+    </form>
+</body>
+</html>

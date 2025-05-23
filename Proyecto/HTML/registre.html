@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Sign in</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="/CSS/registre.css">
+</head>
+<body>
+    <img id="logo" src="../img/logo.png" alt="Logo de la página">
+    <h1>Sign In</h1>
+    <form method="POST" action="../PHP/registre.php">
+        <label for="usuari">Usuari:</label>
+        <input type="text" name="usuari" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" required>
+        <br>
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom">
+        <br>
+        <label for="cognom">Cognom:</label>
+        <input type="text" name="cognom">
+        <br>
+        <label for="contrasenya">Contrasenya:</label>
+        <input type="password" name="contrasenya" id="contrasenya" required>
+        <br>
+        <label for="verifyContrasenya">Verifica la contrasenya: </label>
+        <input type="password" name="verifyContrasenya" id="verifyContrasenya" required>
+        <br>
+        <button type="submit">Registrar</button>
+    </form>
+    <div id="Login">
+        <p>Ja tens un compte?</p>
+        <a href="../index.html" id="loginLink">Log In!</a>
+    </div>
+</body>
+</html>
+<!-- 
+Script taula SQL:
+
+CREATE TABLE IF NOT EXISTS usuari (
+    iduser INT AUTO_INCREMENT PRIMARY KEY,
+    mail VARCHAR(40) UNIQUE NOT NULL,
+    username VARCHAR(16) UNIQUE NOT NULL,
+    passHash VARCHAR(60) NOT NULL,
+    userFirstName VARCHAR(60) NOT NULL,
+    userLastName VARCHAR(120) NOT NULL,
+    creationDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+    removeDate DATETIME DEFAULT NULL,
+    lastSignIn DATETIME DEFAULT NULL,
+    active TINYINT(1) DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin; -->
